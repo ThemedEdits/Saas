@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Started with Nexa | Modern SaaS Platform</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <style>
+        :root {
+            --primary: #4361ee;
+            --primary-dark: #3a56d4;
+            --text: #2b2d42;
+            --text-light: #8d99ae;
+            --bg: #f8f9fa;
+            --white: #ffffff;
+            --border-radius: 8px;
+            --box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            color: var(--text);
+            background: var(--bg);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        header {
+            text-align: center;
+            padding: 60px 0 40px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 20px;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            color: var(--text-light);
+            max-width: 700px;
+            margin: 0 auto 40px;
+        }
+
+        .options-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+            margin: 60px 0;
+        }
+
+        .option-card {
+            background: var(--white);
+            border-radius: var(--border-radius);
+            padding: 40px 30px;
+            box-shadow: var(--box-shadow);
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .option-card:hover {
+            transform: translateY(-3px);
+        }
+
+        .option-icon {
+            width: 80px;
+            height: 80px;
+            background: rgba(67, 97, 238, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 25px;
+        }
+
+        .option-icon i {
+            font-size: 2rem;
+            color: var(--primary);
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+        }
+
+        .feature-list {
+            text-align: left;
+            margin: 25px 0;
+            list-style: none;
+        }
+
+        .feature-list li {
+            margin-bottom: 12px;
+            padding-left: 30px;
+            position: relative;
+        }
+
+        .feature-list li:before {
+            content: '\f00c';
+            font-family: 'Font Awesome 6 Free';
+            font-weight: 900;
+            position: absolute;
+            left: 0;
+            color: var(--primary);
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            border-radius: var(--border-radius);
+            font-weight: 500;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            margin-top: 20px;
+        }
+
+        .btn-primary {
+            background: var(--primary);
+            color: var(--white);
+        }
+
+        .btn-primary:hover {
+            background: var(--primary-dark);
+            transform: translateY(-1px);
+            box-shadow: 0 10px 20px rgba(67, 97, 238, 0.3);
+        }
+
+        .btn-outline {
+            border: 2px solid var(--primary);
+            color: var(--primary);
+        }
+
+        .btn-outline:hover {
+            background: var(--primary);
+            color: var(--white);
+        }
+
+        .testimonial-section {
+            background: var(--white);
+            padding: 60px;
+            border-radius: var(--border-radius);
+            margin: 80px 0;
+            text-align: center;
+            box-shadow: var(--box-shadow);
+        }
+
+        .testimonial {
+            font-style: italic;
+            font-size: 1.1rem;
+            max-width: 800px;
+            margin: 0 auto 30px;
+        }
+
+        .author {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .author img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            .options-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Get Started with Nexa</h1>
+            <p class="subtitle">Choose the best way to begin your journey with our platform. Whether you want to explore
+                on your own or get guided assistance, we've got you covered.</p>
+        </header>
+
+        <div class="options-grid">
+            <!-- Free Trial Option -->
+            <div class="option-card">
+                <div class="option-icon">
+                    <i class="fas fa-rocket"></i>
+                </div>
+                <h2>Start Free Trial</h2>
+                <p>Get full access to all features for 14 days. No credit card required.</p>
+
+                <ul class="feature-list">
+                    <li>Unlimited access to all features</li>
+                    <li>Up to 10 team members</li>
+                    <li>100GB storage</li>
+                    <li>Priority email support</li>
+                </ul>
+
+                <a href="#" class="btn btn-primary">Begin Free Trial</a>
+            </div>
+
+            <!-- Demo Option -->
+            <div class="option-card">
+                <div class="option-icon">
+                    <i class="fas fa-calendar-check"></i>
+                </div>
+                <h2>Schedule a Demo</h2>
+                <p>Get a personalized walkthrough from our product experts.</p>
+
+                <ul class="feature-list">
+                    <li>30-minute 1-on-1 session</li>
+                    <li>See how Nexa solves your specific needs</li>
+                    <li>Q&A with our specialists</li>
+                    <li>Get implementation advice</li>
+                </ul>
+
+                <a href="#" class="btn btn-outline">Book Demo Now</a>
+            </div>
+        </div>
+
+        <!-- Testimonial Section -->
+        <div class="testimonial-section">
+            <p class="testimonial">"We were up and running with Nexa in just 2 days. The onboarding process was so
+                smooth, and we saw ROI within the first month. Highly recommended for any growing business!"</p>
+            <div class="author">
+                <img src="https://randomuser.me/api/portraits/women/45.jpg" alt="Sarah Johnson">
+                <div>
+                    <h4>Sarah Johnson</h4>
+                    <p>CEO, TechSolutions Inc.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Enterprise Option -->
+        <div class="option-card" style="max-width: 800px; margin: 0 auto;">
+            <div class="option-icon">
+                <i class="fas fa-building"></i>
+            </div>
+            <h2>Enterprise Solution</h2>
+            <p>For organizations with 50+ users or custom requirements.</p>
+
+            <ul class="feature-list">
+                <li>Custom implementation</li>
+                <li>Dedicated account manager</li>
+                <li>On-premise deployment options</li>
+                <li>24/7 premium support</li>
+                <li>Security and compliance consulting</li>
+            </ul>
+
+            <a href="login.html" target="_blank" class="btn btn-outline">Contact Sales</a>
+        </div>
+    </div>
+</body>
+
+</html>
